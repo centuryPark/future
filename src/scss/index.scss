@@ -625,3 +625,22 @@ a{
 .button{
   cursor: pointer;
 }
+
+.icon{
+  display: inline-block;
+}
+
+.icon-addr{
+  height: 38px;
+  width: 28px;
+  background: url(../image/icon.png);
+  background-position: 278px 172px;
+}
+
+.icon-car{
+  height: 35px;
+  width: 28px;
+  background: url(../image/icon.png);
+  background-position: 232px 172px;
+}
+

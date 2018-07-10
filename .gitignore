@@ -3,6 +3,7 @@
 # compiled output
 /dist
 /tmp
+/src/dist/css
 angular-cli.tmp.json
 
 # dependencies
