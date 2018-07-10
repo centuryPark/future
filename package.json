@@ -1,0 +1,20 @@
+{
+  "name": "future",
+  "version": "1.0.0",
+  "description": "pc web",
+  "main": "index.js",
+  "scripts": {
+    "test": "some"
+  },
+  "keywords": [
+    "coffee"
+  ],
+  "author": "gongyuan",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.5",
+    "gulp": "^3.9.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.4.1"
+  }
+}
