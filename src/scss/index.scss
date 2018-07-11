@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   background: #000;
+  font-weight: normal;
 }
 
 h2, h3, h4, h5, h6, p {
@@ -16,6 +17,7 @@ a {
 
 .app {
   color: #fff;
+  padding: 0 105px 0 105px;
 }
 
 .header {
@@ -49,6 +51,10 @@ a {
 
     > div {
       margin-left: 48px;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     .first {
@@ -118,7 +124,7 @@ a {
       color: rgb(242, 242, 242);
 
       p {
-        font-weight: 400;
+        //font-weight: 400;
         font-size: 18px;
         line-height: 32px;
         margin-bottom: 83px;
@@ -190,7 +196,7 @@ a {
         p {
           font-size: 16px;
           line-height: 24px;
-          font-weight: 400;
+          //font-weight: 400;
         }
       }
     }
@@ -208,14 +214,16 @@ a {
 
     .pre {
       margin: 22px 24px 0 auto;
-      background: url("../image/icon.png");
+      background: url("../image/icon@2x.png");
       background-position: 329px 62px;
+      background-size: 165px 273px;
     }
 
     .next {
       margin: 22px auto 0 24px;
-      background: url("../image/icon.png");
+      background: url("../image/icon@2x.png");
       background-position: 239px 60px;
+      background-size: 165px 273px;
     }
   }
 }
@@ -300,12 +308,14 @@ a {
     display: flex;
     color: #fff;
 
-    .link-btn {
+    a {
       margin-right: 80px;
+    }
+
+    .link-btn {
+      box-sizing: border-box;
       font-size: 20px;
-      text-align: center;
-      height: 60px;
-      line-height: 60px;
+      line-height: 1em;
       width: 387px;
       background: linear-gradient(90deg, #913F47, #D9752F);
     }
@@ -329,7 +339,7 @@ a {
       font-size: 22px;
       line-height: 22px;
 
-      &::before{
+      &::before {
         content: "";
         display: inline-block;
         width: 6px;
@@ -353,8 +363,8 @@ a {
       .about-btn {
         color: #fff;
         margin-top: 44px;
-        padding: 20px 32px;
         font-size: 20px;
+        line-height: 1em;
         background: linear-gradient(90deg, #913F47, #D9752F);
       }
     }
@@ -411,13 +421,13 @@ a {
         font-size: 0;
         position: relative;
         padding-top: 149.05%;
-        background-color: royalblue;
 
         img {
           position: absolute;
           top: 0;
           left: 0;
           width: 100%;
+          overflow: hidden;
         }
 
         .no {
@@ -462,8 +472,9 @@ a {
         .img-cover {
           font-size: 0;
           position: relative;
-          background-color: aquamarine;
+          overflow: hidden;
           img {
+            width: 100%;
             position: absolute;
             top: 0;
             left: 0;
@@ -491,9 +502,11 @@ a {
       }
 
       .hall-right {
-        background-color: aquamarine;
+        //background-color: #fff;
         border-left: 10px solid #000;
         width: 31%;
+        background: url("../image/hall-02.jpg");
+        background-size: 100%;
       }
     }
 
@@ -618,6 +631,12 @@ a {
 
     li {
       width: 25%;
+      display: flex;
+      align-items: center;
+    }
+
+    .text {
+      margin-left: 12px;
     }
 
     .zh {
@@ -675,28 +694,107 @@ a {
   cursor: pointer;
 }
 
+.btn-icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 32px;
+}
+
 .icon {
   display: inline-block;
+  background: url(../image/icon@2x.png);
+  background-size: 165px 273px;
 }
 
 .icon-addr {
   height: 38px;
   width: 28px;
-  background: url(../image/icon.png);
   background-position: 278px 172px;
 }
 
 .icon-car {
   height: 35px;
   width: 28px;
-  background: url(../image/icon.png);
   background-position: 232px 172px;
 }
 
 .icon-bus {
-  height: 29px;
-  width: 25px;
-  background: url(../image/icon.png);
+  height: 30px;
+  width: 33px;
   background-position: 189px 167px;
 }
 
+.icon-arrow-r {
+  height: 18px;
+  width: 33px;
+  background-position: 317px 124px;
+}
+
+.icon-arrow-l {
+  transform: rotate(-180deg);
+  height: 18px;
+  width: 33px;
+  background-position: 317px 124px;
+}
+
+.icon-zn {
+  height: 31px;
+  width: 31px;
+  background-position: 325px 273px;
+  //background-position: 2.7% 0.2%;
+}
+
+.icon-sm {
+  height: 28px;
+  width: 32px;
+  background-position: 282px 273px;
+}
+
+.icon-cs {
+  height: 32px;
+  width: 28px;
+  background-position: 237px 273px;
+}
+
+.icon-ts {
+  height: 30px;
+  width: 30px;
+  background-position: 195px 273px;
+}
+
+.icon-yl {
+  height: 25px;
+  width: 32px;
+  background-position: 326px 215px;
+}
+
+.icon-kj {
+  height: 28px;
+  width: 37px;
+  background-position: 282px 215px;
+}
+
+.icon-sy {
+  height: 26px;
+  width: 32px;
+  background-position: 240px 215px;
+}
+
+.icon-wo {
+  height: 33px;
+  width: 31px;
+  background-position: 196px 215px;
+}
+
+.gray {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray;
+  &:hover {
+    filter: unset;
+  }
+}
