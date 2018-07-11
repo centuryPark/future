@@ -9,7 +9,7 @@ h2, h3, h4, h5, h6, p {
   margin: 0;
 }
 
-a{
+a {
   text-decoration: none;
   color: #fff;
 }
@@ -52,42 +52,7 @@ a{
     }
 
     .first {
-      position: relative;
-      .first-menu {
-        display: none;
-        background: linear-gradient(90deg, rgba(144, 62, 70, 1), rgba(218, 117, 46, 1));
-        position: absolute;
-        top: 49px;
-        left: -80px;
-        width: 66vw;
-
-        .line {
-          padding: 26px 56px 26px 26px;
-          display: flex;
-          list-style-type: none;
-          margin: 0;
-
-          li {
-            width: 25%;
-          }
-
-          .zh {
-            display: block;
-            font-size: 20px;
-            line-height: 20px;
-            letter-spacing: 2px;
-            font-weight: 500;
-          }
-          .en {
-            padding-top: 4px;
-            display: block;
-            font-size: 14px;
-            line-height: 14px;
-            letter-spacing: 2px;
-            font-weight: bold;
-          }
-        }
-      }
+      //position: relative;
 
     }
 
@@ -243,13 +208,13 @@ a{
 
     .pre {
       margin: 22px 24px 0 auto;
-      background:url("../image/icon.png");
+      background: url("../image/icon.png");
       background-position: 329px 62px;
     }
 
     .next {
       margin: 22px auto 0 24px;
-      background:url("../image/icon.png");
+      background: url("../image/icon.png");
       background-position: 239px 60px;
     }
   }
@@ -270,27 +235,48 @@ a{
     align-items: stretch;
 
     .img {
-      width: 97%;
+      width: 62%;
       position: relative;
-
+      flex: 0 0 auto;
       img {
         position: absolute;
         top: 0;
         left: 0;
         height: 100%;
-        overflow: auto;
+        overflow: hidden;
+        z-index: -1;
       }
     }
 
     .map-desc {
+      box-sizing: border-box;
+      width: 38%;
       color: #fff;
-      padding: 29px 54px 69px 65px;
+      flex: 0 0 auto;
+      padding: 29px 54px 69px 83px;
       background: linear-gradient(90deg, rgba(145, 63, 71, 1), rgba(217, 117, 47, 1));
 
       h4 {
         margin: 36px 0 0 0;
         font-size: 24px;
         line-height: 22px;
+        position: relative;
+
+        .icon {
+          position: absolute;
+        }
+        .icon-addr {
+          left: -38px;
+          top: -4px;
+        }
+        .icon-car {
+          left: -38px;
+          top: -8px;
+        }
+        .icon-bus {
+          top: -3px;
+          left: -35px;
+        }
       }
       p {
         margin: 12px 0 0 0;
@@ -342,6 +328,17 @@ a{
       margin: 0 0 0 0;
       font-size: 22px;
       line-height: 22px;
+
+      &::before{
+        content: "";
+        display: inline-block;
+        width: 6px;
+        height: 24px;
+        background-color: #fff;
+        margin-right: 6px;
+        position: relative;
+        top: 4px;
+      }
     }
     p {
       font-size: 18px;
@@ -605,6 +602,58 @@ a{
   }
 }
 
+.first-menu {
+  display: none;
+  background: linear-gradient(90deg, rgba(144, 62, 70, 1), rgba(218, 117, 46, 1));
+  position: fixed;
+  top: 80px;
+  right: 0;
+  width: 832px;
+
+  .line {
+    padding: 26px 56px 26px 26px;
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+
+    li {
+      width: 25%;
+    }
+
+    .zh {
+      display: block;
+      font-size: 20px;
+      line-height: 20px;
+      letter-spacing: 2px;
+      font-weight: 500;
+    }
+    .en {
+      padding-top: 4px;
+      display: block;
+      font-size: 14px;
+      line-height: 14px;
+      letter-spacing: 2px;
+      font-weight: bold;
+    }
+  }
+
+  .point {
+    font-size: 0;
+    position: relative;
+
+    .tra {
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-bottom: 8px solid #964343;
+      top: -8px;
+      left: 74px;
+    }
+  }
+}
+
 .bot-logo {
   text-align: center;
   padding: 160px 0 100px 0;
@@ -622,25 +671,32 @@ a{
   background: linear-gradient(90deg, rgba(145, 63, 71, 1), rgba(217, 117, 47, 1));
 }
 
-.button{
+.button {
   cursor: pointer;
 }
 
-.icon{
+.icon {
   display: inline-block;
 }
 
-.icon-addr{
+.icon-addr {
   height: 38px;
   width: 28px;
   background: url(../image/icon.png);
   background-position: 278px 172px;
 }
 
-.icon-car{
+.icon-car {
   height: 35px;
   width: 28px;
   background: url(../image/icon.png);
   background-position: 232px 172px;
+}
+
+.icon-bus {
+  height: 29px;
+  width: 25px;
+  background: url(../image/icon.png);
+  background-position: 189px 167px;
 }
 
