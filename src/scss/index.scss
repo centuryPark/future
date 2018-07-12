@@ -10,7 +10,7 @@ h2, h3, h4, h5, h6, p {
   margin: 0;
 }
 
-p{
+p {
   font-weight: 200;
 }
 
@@ -92,11 +92,11 @@ a {
   color: #fff;
   text-align: center;
 
-  p{
+  p {
     font-size: 20px;
     line-height: 36px;
     letter-spacing: 6px;
-    &+p{
+    & + p {
       margin-top: 20px;
     }
   }
@@ -198,7 +198,7 @@ a {
           background-color: #f2f2f2;
           overflow: hidden;
 
-          img{
+          img {
             position: absolute;
             left: 0;
             top: 0px;
@@ -251,6 +251,12 @@ a {
   h2 {
     // height: 64px;
     margin: 0;
+  }
+
+  .title-bg {
+    width: 255px;
+    height: 64px;
+    background-position: 1px 1px;
   }
 
   .img-content {
@@ -323,16 +329,13 @@ a {
   background: url("../image/link-bg-b.jpg");
   background-repeat: no-repeat;
   background-size: auto 100%;
-  padding:93px 0 105px 0;
+  padding: 93px 0 105px 0;
 
-  /*.bg{
-    position: absolute;
-    left: -105px;
-    top: 0;
-    width: 100vw;
-    //max-width: 1665px;
-    z-index: -1;
-  }*/
+  .title-bg {
+    width: 254px;
+    height: 64px;
+    background-position: 0px -129px;
+  }
 
   .email-list {
     margin-top: 88px;
@@ -354,6 +357,9 @@ a {
 
   .about {
     margin-top: 200px;
+    width: 254px;
+    height: 64px;
+    background-position: 0px -255px;
   }
 
   .about-content {
@@ -418,6 +424,13 @@ a {
 
 .review {
   margin-top: 64px;
+
+  .title-bg{
+    width: 254px;
+    height: 64px;
+    background-position: 0px -372px;
+  }
+
   .review-content {
     margin-top: 70px;
     // font-size: 0;
@@ -570,6 +583,12 @@ a {
 
 .join-meeting {
   margin-top: 191px;
+
+  .title-bg{
+    width: 254px;
+    height: 64px;
+    background-position: 0px -486px;
+  }
 
   h4 {
     font-size: 20px;
@@ -829,4 +848,9 @@ a {
   &:hover {
     filter: unset;
   }
+}
+
+.title-bg {
+  background: url(../image/title.png);
+  background-size: 254px 551px;
 }
