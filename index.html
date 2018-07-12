@@ -9,7 +9,7 @@
 </head>
 <body>
 <div class="app">
-    <header class="header">
+    <header id="header" class="header">
         <div class="logo">
             <img src="https://og9s6vxbs.qnssl.com/futrue/logo-new.png"/>
         </div>
@@ -111,7 +111,7 @@
                     <div class="button btn-default">7.28 15:30-17:30</div>
                 </div>
             </div>
-            <div class="guest-group">
+            <div id="city_content" class="guest-group">
                 <div class="control">
                     <div class="button pre"></div>
                 </div>
@@ -153,7 +153,7 @@
                     <div class="button btn-default">7.29 13:00-15:00</div>
                 </div>
             </div>
-            <div class="guest-group">
+            <div id="recreation_content" class="guest-group">
                 <div class="control">
                     <div class="button pre"></div>
                 </div>
@@ -195,7 +195,7 @@
                     <div class="button btn-default">7.28 9:00-11:00</div>
                 </div>
             </div>
-            <div class="guest-group">
+            <div id="explore_content" class="guest-group">
                 <div class="control">
                     <div class="button pre"></div>
                 </div>
@@ -235,7 +235,7 @@
                     <div class="button btn-default">7.28 9:00-11:00</div>
                 </div>
             </div>
-            <div class="guest-group">
+            <div id="intelligent_content" class="guest-group">
                 <div class="control">
                     <div class="button pre"></div>
                 </div>
@@ -277,7 +277,7 @@
                     <div class="button btn-default">7.28 13:00-15:00</div>
                 </div>
             </div>
-            <div class="guest-group">
+            <div id="life_content" class="guest-group">
                 <div class="control">
                     <div class="button pre"></div>
                 </div>
@@ -319,7 +319,7 @@
                     <div class="button btn-default">7.29 9:00-11:00</div>
                 </div>
             </div>
-            <div class="guest-group">
+            <div id="space_content" class="guest-group">
                 <div class="control">
                     <div class="button pre"></div>
                 </div>
@@ -359,7 +359,7 @@
                     <div class="button btn-default">7.29 15:30-17:30</div>
                 </div>
             </div>
-            <div class="guest-group">
+            <div id="business_content" class="guest-group">
                 <div class="control">
                     <div class="button pre"></div>
                 </div>
@@ -401,7 +401,7 @@
                     <div class="button btn-default">7.29 18:30-20:30</div>
                 </div>
             </div>
-            <div class="guest-group">
+            <div id="me_content" class="guest-group">
                 <div class="control">
                     <div class="button pre"></div>
                 </div>
@@ -455,7 +455,10 @@
                 </div>
             </section>
         </article>
-        <article class="link">
+    </div>
+    <article class="link">
+        <!--<img class="bg" src="src/dist/image/link-bg.jpg"/>-->
+        <div class="content">
             <h2 id="call">联系我们(邮箱)</h2>
             <section class="email-list">
                 <a href="mailto:danni.liu@zaojiu.com">
@@ -493,7 +496,9 @@
                     </div>
                 </div>
             </section>
-        </article>
+        </div>
+    </article>
+    <div class="content">
         <article class="review">
             <h2 id="review">往届回顾</h2>
             <div class="review-content">
@@ -609,6 +614,7 @@
             <img src="src/dist/image/zaojiu-logo.png">
         </div>
     </div>
+</div>
 </div>
 <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
 <script src="src/dist/js/main.js"></script>

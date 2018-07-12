@@ -10,6 +10,10 @@ h2, h3, h4, h5, h6, p {
   margin: 0;
 }
 
+p{
+  font-weight: 200;
+}
+
 a {
   text-decoration: none;
   color: #fff;
@@ -17,7 +21,6 @@ a {
 
 .app {
   color: #fff;
-  padding: 0 105px 0 105px;
 }
 
 .header {
@@ -67,7 +70,7 @@ a {
       height: 80px;
       line-height: 80px;
       text-align: center;
-      background: linear-gradient(90deg, rgba(144, 62, 70, 1), rgba(218, 117, 46, 1));
+      background: linear-gradient(90deg, #912C36, #D96D21)
     }
   }
 }
@@ -86,18 +89,25 @@ a {
 .description {
   margin-top: 63px;
   margin-bottom: 200px;
-  font-size: 20px;
-  line-height: 36px;
-  letter-spacing: 6px;
   color: #fff;
-  font-weight: 100;
   text-align: center;
+
+  p{
+    font-size: 20px;
+    line-height: 36px;
+    letter-spacing: 6px;
+    &+p{
+      margin-top: 20px;
+    }
+  }
 }
 
 .content {
   width: 100%;
-  max-width: 1320px;
+  max-width: 1530px;
   margin: auto;
+  padding: 0 105px 0 105px;
+  box-sizing: border-box;
 
 }
 
@@ -173,7 +183,6 @@ a {
       flex-grow: 1;
       color: #fff;
       display: flex;
-      justify-content: space-between;
 
       .guest-item {
         width: 25%;
@@ -187,6 +196,14 @@ a {
           font-size: 0;
           padding-top: 70%;
           background-color: #f2f2f2;
+          overflow: hidden;
+
+          img{
+            position: absolute;
+            left: 0;
+            top: 0px;
+            width: 100%;
+          }
         }
         h4 {
           margin: 20px 0 8px 0;
@@ -262,7 +279,7 @@ a {
       color: #fff;
       flex: 0 0 auto;
       padding: 29px 54px 69px 83px;
-      background: linear-gradient(90deg, rgba(145, 63, 71, 1), rgba(217, 117, 47, 1));
+      background: linear-gradient(90deg, #912C36, #D96D21);
 
       h4 {
         margin: 36px 0 0 0;
@@ -302,7 +319,21 @@ a {
 }
 
 .link {
-  margin-top: 195px;
+  margin-top: 102px;
+  background: url("../image/link-bg-b.jpg");
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  padding:93px 0 105px 0;
+
+  /*.bg{
+    position: absolute;
+    left: -105px;
+    top: 0;
+    width: 100vw;
+    //max-width: 1665px;
+    z-index: -1;
+  }*/
+
   .email-list {
     margin-top: 88px;
     display: flex;
@@ -317,7 +348,7 @@ a {
       font-size: 20px;
       line-height: 1em;
       width: 387px;
-      background: linear-gradient(90deg, #913F47, #D9752F);
+      background: linear-gradient(90deg, #912C36, #D96D21);
     }
   }
 
@@ -365,7 +396,7 @@ a {
         margin-top: 44px;
         font-size: 20px;
         line-height: 1em;
-        background: linear-gradient(90deg, #913F47, #D9752F);
+        background: linear-gradient(90deg, #912C36, #D96D21);
       }
     }
 
@@ -386,7 +417,7 @@ a {
 }
 
 .review {
-  margin-top: 169px;
+  margin-top: 64px;
   .review-content {
     margin-top: 70px;
     // font-size: 0;
@@ -409,11 +440,12 @@ a {
       }
 
       .guest-header {
-        background: linear-gradient(90deg, rgba(145, 63, 71, 1), rgba(217, 117, 47, 1));
-        font-size: 30px;
-        line-height: 30px;
+        background: linear-gradient(90deg, #912C36, #D96D21);
+        font-size: 22px;
+        line-height: 1.36em;
         padding: 11px 20px;
-        width: 61%;
+        width: 196px;
+        box-sizing: border-box;
       }
 
       .cover {
@@ -490,7 +522,7 @@ a {
             left: 0;
             padding: 11px 84px 11px 24px;
             font-size: 22px;
-            line-height: 1em;
+            line-height: 1.36em;
           }
         }
 
@@ -566,7 +598,7 @@ a {
 
     .step-1 {
       width: 38.18%;
-      background: linear-gradient(90deg, rgba(145, 63, 71, 1), rgba(217, 117, 47, 1));
+      background: linear-gradient(90deg, #912C36, #D96D21);
 
       p {
         color: #fff;
@@ -617,7 +649,7 @@ a {
 
 .first-menu {
   display: none;
-  background: linear-gradient(90deg, rgba(144, 62, 70, 1), rgba(218, 117, 46, 1));
+  background: linear-gradient(90deg, #912C36, #D96D21);
   position: fixed;
   top: 80px;
   right: 0;
@@ -687,7 +719,7 @@ a {
   font-size: 20px;
   line-height: 1em;
   padding: 20px 32px;
-  background: linear-gradient(90deg, rgba(145, 63, 71, 1), rgba(217, 117, 47, 1));
+  background: linear-gradient(90deg, #912C36, #D96D21);
 }
 
 .button {
