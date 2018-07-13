@@ -1,7 +1,7 @@
 $(document).ready(function () {
     insertGuest('#intelligent_content', intelligentList, 'intelligent');
     insertGuest('#life_content', lifeList, 'life');
-    //insertGuest('#city_content', cityList, 'city');
+    insertGuest('#city_content', cityList, 'city');
     insertGuest('#explore_content', exploreList, 'explore');
     insertGuest('#recreation_content', recreationList, 'recreation');
     insertGuest('#space_content', spaceList, 'space');
@@ -550,7 +550,7 @@ $("#menu_control")
     .on("mouseleave", function () {
         if (MENUE_OPEN) {
             MENUE_OPEN = false;
-            //MENUE_BODY.hide();
+            MENUE_BODY.hide();
         }
     });
 
