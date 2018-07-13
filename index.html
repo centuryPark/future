@@ -11,17 +11,42 @@
             html {
                 font-size: 20px !important;
             }
+            .icon{
+                /*transform: scale(1);*/
+                zoom: 1;
+            }
         }
 
         @media only screen and (max-width: 1360px) {
             html {
                 font-size: 16px !important;
             }
+            .icon{
+                /*transform: scale(0.9);*/
+                -moz-transform: scale(0.9);
+                zoom: 0.9;
+            }
+            .title-bg{
+                /*transform: scale(0.8);*/
+                -moz-transform: scale(0.8);
+                zoom:0.8;
+            }
+
         }
 
         @media only screen and (max-width: 1100px) {
             html {
                 font-size: 14px !important;
+            }
+            .icon{
+                /*transform: scale(0.8);*/
+                zoom:0.8;
+                -moz-transform: scale(0.8);
+            }
+            .title-bg{
+                /*transform: scale(0.7);*/
+                -moz-transform: scale(0.7);
+                zoom:0.7;
             }
         }
     </style>
@@ -132,7 +157,7 @@
             </div>
             <div id="city_content" class="guest-group">
                 <div class="control">
-                    <div class="button pre"></div>
+                    <div class="button pre icon"></div>
                 </div>
                 <div class="guest-content">
                     <div class="guest-item">
@@ -156,8 +181,8 @@
                         <p>中国科学院上海生命科学研究院生物化学与细胞生物学研究所，研究员，研究组长</p>
                     </div>
                 </div>
-                <div class="control">
-                    <div class="button next"></div>
+                <div class="control own">
+                    <div class="button next icon"></div>
                 </div>
             </div>
         </div>
@@ -451,9 +476,9 @@
                 </div>
             </div>
         </div>
-        <article class="map">
+        <article id="traffic" class="map">
             <!--交通导览-->
-            <h2 id="traffic" class="title-bg"></h2>
+            <h2 class="title-bg"></h2>
             <section class="img-content">
                 <div class="img">
                     <img src="src/dist/image/map.jpg"/>
@@ -476,11 +501,11 @@
             </section>
         </article>
     </div>
-    <article class="link">
+    <article id="call" class="link">
         <div class="content">
             <!--联系我们(邮箱)-->
-            <h2 id="call" class="title-bg"></h2>
-            <section class="email-list">
+            <h2 class="title-bg"></h2>
+            <section id="about" class="email-list">
                 <a href="mailto:danni.liu@zaojiu.com">
                     <div class="button btn-icon link-btn">
                         <span>danni.liu@zaojiu.com</span>
@@ -495,7 +520,7 @@
                 </a>
             </section>
             <!--关于我们-->
-            <h2 id="about" class="about title-bg"></h2>
+            <h2 class="about title-bg"></h2>
             <section class="about-content">
                 <div class="about-left">
                     <h4>关于造就</h4>
@@ -512,7 +537,7 @@
                 <div class="about-right">
                     <h4>造就 APP</h4>
                     <p>扫描下图二维码下载造就 APP，发现更多精彩内容（iOS & Android）</p>
-                    <div class="qrcode">
+                    <div class="qrcode" id="review">
                         <img src="src/dist/image/qrcode.jpg">
                     </div>
                 </div>
@@ -522,8 +547,8 @@
     <div class="content">
         <article class="review">
             <!--往届回顾-->
-            <h2 id="review" class="title-bg"></h2>
-            <div class="review-content">
+            <h2 class="title-bg"></h2>
+            <div id="review_content"  class="review-content">
                 <div class="guest">
                     <div class="guest-header">嘉宾阵容</div>
                     <div class="cover gray">
@@ -531,7 +556,7 @@
                         <div class="no">01</div>
                     </div>
                     <p class="guest-desc">《未来简史》作者 尤瓦尔·赫拉利</p>
-                    <div class="button btn-icon  btn">
+                    <div class="button btn-icon  btn" data-c-p="03" data-type="review-guest">
                         <span class="icon icon-arrow-l"></span>
                         <span>上一页</span>
                     </div>
@@ -558,7 +583,7 @@
                         <div class="no">04</div>
                     </div>
                     <p class="guest-desc">红杉资本中国基金专家合伙人 车品觉</p>
-                    <div class="button btn-icon btn margin">
+                    <div class="button btn-icon btn margin" data-c-p="04" data-type="review-guest">
                         <span>下一页</span>
                         <span class="icon icon-arrow-r"></span>
                     </div>
