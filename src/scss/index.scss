@@ -27,7 +27,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 80px;
+  height: 68px;
   position: fixed;
   top: 0;
   left: 0;
@@ -35,25 +35,25 @@ a {
   z-index: 100;
 
   .logo {
-    padding: 16px 0 16px 60px;
+    padding: 13px 0 13px 60px;
     img {
-      height: 48px;
+      height: 42px;
     }
   }
 
   .menu {
-    height: 80px;
+    height: 68px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     padding-right: 60px;
     color: rgb(242, 242, 242);
-    font-size: 18px;
-    line-height: 18px;
+    font-size: 0.9rem;
+    line-height: 1em;
     background-color: transparent;
 
     > div {
-      margin-left: 48px;
+      margin-left: 2.4rem;
       height: 80px;
       display: flex;
       align-items: center;
@@ -67,10 +67,11 @@ a {
 
     .buy-ticket {
       width: 124px;
-      height: 80px;
-      line-height: 80px;
+      height: 42px;
+      border-radius: 4px;
+      line-height: 68px;
       text-align: center;
-      background: linear-gradient(90deg, #912C36, #D96D21)
+      background: linear-gradient(90deg, #912C36, #D96D21);
     }
   }
 }
@@ -93,8 +94,8 @@ a {
   text-align: center;
 
   p {
-    font-size: 20px;
-    line-height: 36px;
+    font-size: 1rem;
+    line-height: 1.8em;
     letter-spacing: 6px;
     & + p {
       margin-top: 20px;
@@ -112,13 +113,13 @@ a {
 }
 
 .meet-model {
-  margin-top: 200px;
+  margin-top: 10rem;
   .detail {
     font-size: 0;
     position: relative;
     padding-top: 49.77%;
     overflow: hidden;
-    margin-bottom: 80px;
+    margin-bottom: 4rem;
 
     img {
       position: absolute;
@@ -135,18 +136,18 @@ a {
 
       p {
         //font-weight: 400;
-        font-size: 18px;
-        line-height: 32px;
-        margin-bottom: 83px;
+        font-size: 0.9rem;
+        line-height: 1.77em;
+        margin-bottom: 3rem;
       }
 
       .btn-default {
-        width: 230px;
-        font-size: 20px;
+        width: 11.5rem;
+        font-size: 1rem;
         line-height: 1em;
         text-align: center;
         border: 2px solid #fff;
-        padding: 20px 0;
+        padding: 1rem 0;
       }
     }
 
@@ -182,14 +183,15 @@ a {
       width: calc(100% - 200px);
       flex-grow: 1;
       color: #fff;
-      display: flex;
+      font-size: 0;
+      white-space: nowrap;
 
       .guest-item {
-        width: 25%;
-
-        & + .guest-item {
-          padding-left: 28px;
-        }
+        width: 23%;
+        margin-right: 2.3%;
+        display: inline-block;
+        box-sizing: border-box;
+        vertical-align: text-top;
 
         .cover {
           position: relative;
@@ -207,20 +209,19 @@ a {
         }
         h4 {
           margin: 20px 0 8px 0;
-          font-size: 24px;
-          line-height: 24px;
+          font-size: 1.2rem;
+          line-height: 1em;
         }
         p {
-          font-size: 16px;
-          line-height: 24px;
-          //font-weight: 400;
+          white-space: normal;
+          font-size: 0.8rem;
+          line-height: 1.5em;
         }
       }
     }
     .control {
       width: 100px;
-      height: 100px;
-      margin-top: 4%;
+      //height: 100px;
 
       > div {
         width: 62px;
@@ -229,24 +230,34 @@ a {
       }
     }
 
+    .own{
+      height: 72px;
+    }
+
     .pre {
-      margin: 22px 24px 0 auto;
+      margin: 0 24px 0 auto;
       background: url("../image/icon@2x.png");
       background-position: 329px 62px;
       background-size: 165px 273px;
+      position: absolute;
+      left: 16px;
+      top: 19%;
     }
 
     .next {
-      margin: 22px auto 0 24px;
+      margin: 0 auto 0 0;
       background: url("../image/icon@2x.png");
       background-position: 239px 60px;
       background-size: 165px 273px;
+      position: absolute;
+      right: 26px;
+      top: 19%;
     }
   }
 }
 
 .map {
-  margin-top: 180px;
+  padding-top: 9rem;
 
   h2 {
     // height: 64px;
@@ -284,13 +295,13 @@ a {
       width: 38%;
       color: #fff;
       flex: 0 0 auto;
-      padding: 29px 54px 69px 83px;
+      padding: 1.5rem 54px 3.45rem 83px;
       background: linear-gradient(90deg, #912C36, #D96D21);
 
       h4 {
-        margin: 36px 0 0 0;
-        font-size: 24px;
-        line-height: 22px;
+        margin: 1.8rem 0 0 0;
+        font-size: 1.2rem;
+        line-height: 0.91em;
         position: relative;
 
         .icon {
@@ -310,14 +321,14 @@ a {
         }
       }
       p {
-        margin: 12px 0 0 0;
-        font-size: 18px;
-        line-height: 32px;
+        margin: 0.6rem 0 0 0;
+        font-size: 0.9rem;
+        line-height: 1.77em;
       }
       .more {
-        font-size: 14px;
-        line-height: 14px;
-        margin-top: 36px;
+        font-size: 0.7rem;
+        line-height: 1.5em;
+        margin-top: 1.8rem;
         font-weight: 100;
       }
     }
@@ -325,11 +336,10 @@ a {
 }
 
 .link {
-  margin-top: 102px;
   background: url("../image/link-bg-b.jpg");
   background-repeat: no-repeat;
   background-size: auto 100%;
-  padding: 93px 0 105px 0;
+  padding: 195px 0 105px 0;
 
   .title-bg {
     width: 254px;
@@ -344,13 +354,13 @@ a {
 
     a {
       margin-right: 80px;
+      width: 29%;
     }
 
     .link-btn {
       box-sizing: border-box;
-      font-size: 20px;
+      font-size: 1rem;
       line-height: 1em;
-      width: 387px;
       background: linear-gradient(90deg, #912C36, #D96D21);
     }
   }
@@ -373,8 +383,8 @@ a {
 
     h4 {
       margin: 0 0 0 0;
-      font-size: 22px;
-      line-height: 22px;
+      font-size: 1.1rem;
+      line-height: 1em;
 
       &::before {
         content: "";
@@ -388,8 +398,8 @@ a {
       }
     }
     p {
-      font-size: 18px;
-      line-height: 32px;
+      font-size: 0.9rem;
+      line-height: 1.77em;
       margin: 28px 0 0 0;
       font-weight: 200;
     }
@@ -399,17 +409,17 @@ a {
     .about-middle {
       .about-btn {
         color: #fff;
-        margin-top: 44px;
-        font-size: 20px;
+        margin-top: 2.2rem;
+        font-size: 1em;
         line-height: 1em;
         background: linear-gradient(90deg, #912C36, #D96D21);
       }
     }
 
     .qrcode {
-      margin-top: 44px;
-      height: 200px;
-      width: 200px;
+      margin-top: 2.2rem;
+      height: 10rem;
+      width: 10rem;
       background-color: #f2f2f2;
       font-size: 0;
 
@@ -425,7 +435,7 @@ a {
 .review {
   margin-top: 64px;
 
-  .title-bg{
+  .title-bg {
     width: 254px;
     height: 64px;
     background-position: 0px -372px;
@@ -433,9 +443,7 @@ a {
 
   .review-content {
     margin-top: 70px;
-    // font-size: 0;
-    //padding-top: 65.37%;
-    height: 863px;
+    height: 40rem;
     display: flex;
     justify-content: space-between;
 
@@ -454,10 +462,10 @@ a {
 
       .guest-header {
         background: linear-gradient(90deg, #912C36, #D96D21);
-        font-size: 22px;
+        font-size: 1.1rem;
         line-height: 1.36em;
         padding: 11px 20px;
-        width: 196px;
+        width: 100%;
         box-sizing: border-box;
       }
 
@@ -479,7 +487,7 @@ a {
           position: absolute;
           bottom: -40px;
           left: 24px;
-          font-size: 80px;
+          font-size: 4rem;
           font-weight: bold;
           z-index: 1;
         }
@@ -488,15 +496,15 @@ a {
       .guest-desc {
         margin: 40px 0 0 0;
         color: #fff;
-        font-size: 20px;
+        font-size: 1rem;
       }
 
       .btn {
-        margin-top: 80px;
+        margin-top: 4rem;
       }
 
       .margin {
-        margin-top: 156px;
+        margin-top: 7.8rem;
       }
 
     }
@@ -534,7 +542,7 @@ a {
             top: 0;
             left: 0;
             padding: 11px 84px 11px 24px;
-            font-size: 22px;
+            font-size: 1.1rem;
             line-height: 1.36em;
           }
         }
@@ -582,23 +590,23 @@ a {
 }
 
 .join-meeting {
-  margin-top: 191px;
+  margin-top: 9.55rem;
 
-  .title-bg{
+  .title-bg {
     width: 254px;
     height: 64px;
     background-position: 0px -486px;
   }
 
   h4 {
-    font-size: 20px;
+    font-size: 1rem;
     line-height: 1em;
     color: #fff;
   }
 
   p {
     margin: 16px 0 0 0;
-    font-size: 16px;
+    font-size: 0.8rem;
     line-height: 1.5em;
     color: rgb(128, 128, 128);
   }
@@ -657,11 +665,12 @@ a {
 
     .btn {
       position: absolute;
-      width: calc(100% - 63px);
+      width: 100%;
       bottom: 0;
       left: 0;
       font-weight: bold;
       margin: 0;
+      box-sizing: border-box;
     }
   }
 }
@@ -672,7 +681,7 @@ a {
   position: fixed;
   top: 80px;
   right: 0;
-  width: 832px;
+  width: calc(32.4rem + 184px);
 
   .line {
     padding: 26px 56px 26px 26px;
@@ -692,16 +701,16 @@ a {
 
     .zh {
       display: block;
-      font-size: 20px;
-      line-height: 20px;
+      font-size: 1rem;
+      line-height: 1em;
       letter-spacing: 2px;
       font-weight: 500;
     }
     .en {
       padding-top: 4px;
       display: block;
-      font-size: 14px;
-      line-height: 14px;
+      font-size: 0.7rem;
+      line-height: 1em;
       letter-spacing: 2px;
       font-weight: bold;
     }
@@ -719,23 +728,23 @@ a {
       border-right: 8px solid transparent;
       border-bottom: 8px solid #964343;
       top: -8px;
-      left: 74px;
+      left: 3.7rem;
     }
   }
 }
 
 .bot-logo {
   text-align: center;
-  padding: 160px 0 100px 0;
+  padding: 8rem 0 5rem 0;
   img {
-    width: 131px;
-    height: 114px;
+    width: 6.55rem;
+    height: 5.7rem;
   }
 }
 
 .btn {
   color: #fff;
-  font-size: 20px;
+  font-size: 1rem;
   line-height: 1em;
   padding: 20px 32px;
   background: linear-gradient(90deg, #912C36, #D96D21);
@@ -749,7 +758,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 32px;
+  padding: 1rem 1.6rem;
 }
 
 .icon {
@@ -761,6 +770,7 @@ a {
 .icon-addr {
   height: 38px;
   width: 28px;
+  //background-position: 278px 172px;
   background-position: 278px 172px;
 }
 
@@ -798,7 +808,7 @@ a {
 
 .icon-sm {
   height: 28px;
-  width: 32px;
+  width: 35px;
   background-position: 282px 273px;
 }
 
@@ -822,7 +832,7 @@ a {
 
 .icon-kj {
   height: 28px;
-  width: 37px;
+  width: 46px;
   background-position: 282px 215px;
 }
 
@@ -834,7 +844,7 @@ a {
 
 .icon-wo {
   height: 33px;
-  width: 31px;
+  width: 32px;
   background-position: 196px 215px;
 }
 
