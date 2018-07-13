@@ -4,7 +4,8 @@
     <meta content="text/html" charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>未来大会</title>
+    <title>2018造就未来大会</title>
+    <link rel="icon" type="image/x-icon" href="https://assets.zaojiu.com/web2/assets/favicon.ico">
     <link rel="stylesheet" type="text/css" href="/src/dist/css/index.css"/>
     <style>
         @media only screen and (max-width: 1665px) {
@@ -36,7 +37,7 @@
 
         @media only screen and (max-width: 1100px) {
             html {
-                font-size: 14px !important;
+                font-size: 16px !important;
             }
             .icon{
                 /*transform: scale(0.8);*/
@@ -50,6 +51,7 @@
             }
         }
     </style>
+    <script src="src/dist/js/p5.min.js"></script>
 </head>
 <body>
 <div class="app">
@@ -138,7 +140,10 @@
         </div>
     </header>
     <div class="banner">
-        <img src="src/dist/image/index.jpg">
+        <div id="canvas"></div>
+        <!--<img src="src/dist/image/index.jpg">-->
+        <img class="banner-text" src="src/dist/image/banner-text.png"/>
+        <div class="bg-cover"></div>
     </div>
     <div class="description">
         <p>科技的应用出现了令人惊叹的突破</p>
@@ -663,8 +668,36 @@
         </div>
     </div>
 </div>
-</div>
+<script type="text/javascript">
+
+    var options ={
+        Background :[0,0,0],
+        Color1 : '#e37b1e',
+        Color2 : '#480638',
+        Range : 1156,
+        Speed : 19,
+        Points : 1000,
+        maxSize : 19,
+        minSize: 7.5,
+        Direction : 'Center',
+
+        Random: function () {
+            options.Color1 = [random(0,255),random(0,255),random(0,255)];
+            options.Color2 = [random(0,255),random(0,255),random(0,255)];
+            options.Speed = random(10,20);
+            options.Range = random(400);
+            options.Points = random(300,2000);
+            options.maxSize = random(1,20);
+            options.minSize = random(1,5);
+            options.Direction = random( ['Center', 'Left','Right','Up','Down'] );
+        },
+
+    }
+
+
+</script>
 <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script src="src/dist/js/sketch.js"></script>
 <script src="src/dist/js/main.js"></script>
 </body>
 </html>
