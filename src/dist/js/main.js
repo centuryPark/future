@@ -586,7 +586,7 @@ function insertGuest(toID, data, type) {
 }
 
 function insertReviewGuest(data, index, len) {
-    var html = '<div class="guest"><div class="guest-header">嘉宾阵容</div>' +
+    var html = '<div class="guest"><button class="guest-header">嘉宾阵容</button>' +
         '<div class="cover gray">' +
         '<img src="' + data[0].img + '"/>' +
         '<div class="no">' + data[0].id + '</div>' +
@@ -594,8 +594,8 @@ function insertReviewGuest(data, index, len) {
         '<p class="guest-desc">' + data[0].name + '</p>';
     if (index > 1) {
         html +=
-            '<div class="button btn-icon  btn" data-c-p="03" data-type="review-guest"><span class="icon icon-arrow-l"></span>' +
-            '<span>上一页</span></div>';
+            '<div class="button btn-icon  btn" data-c-p="03" data-type="review-guest"><span data-c-p="03" data-type="review-guest" class="icon icon-arrow-l"></span>' +
+            '<span data-c-p="03" data-type="review-guest">上一页</span></div>';
     }
 
     html +=
@@ -623,7 +623,7 @@ function insertReviewGuest(data, index, len) {
         '<p class="guest-desc">' + data[3].name + '</p>';
     if (index < len) {
         html += '<div class="button btn-icon btn margin" data-c-p="04" data-type="review-guest">' +
-            '<span>下一页</span><span class="icon icon-arrow-r"></span></div>';
+            '<span data-c-p="04" data-type="review-guest">下一页</span><span class="icon icon-arrow-r" data-c-p="04" data-type="review-guest"></span></div>';
     }
     html += '</div>';
     $("#review_content").html(html);

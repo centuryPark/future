@@ -3,6 +3,7 @@ body {
   padding: 0;
   background: #000;
   font-weight: normal;
+  font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif;
 }
 
 h2, h3, h4, h5, h6, p {
@@ -91,7 +92,6 @@ a {
 
 .description {
   margin-top: 3.15rem;
-  margin-bottom: 10rem;
   color: #fff;
   text-align: center;
 
@@ -115,7 +115,8 @@ a {
 }
 
 .meet-model {
-  margin-top: 10rem;
+  padding-top: 10rem;
+
   .detail {
     font-size: 0;
     position: relative;
@@ -464,11 +465,12 @@ a {
 
       .guest-header {
         background: linear-gradient(90deg, #912C36, #D96D21);
+        box-sizing: border-box;
+        padding: 11px 84px 11px 24px;
         font-size: 1.1rem;
         line-height: 1.36em;
-        padding: 11px 20px;
-        width: 100%;
-        box-sizing: border-box;
+        border: none;
+        color: #fff;
       }
 
       .cover {
