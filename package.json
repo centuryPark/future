@@ -12,9 +12,15 @@
   "author": "gongyuan",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^9.0.0",
     "browser-sync": "^2.18.5",
+    "cssnext": "^1.8.4",
     "gulp": "^3.9.0",
+    "gulp-postcss": "^7.0.1",
     "gulp-sass": "^4.0.1",
     "gulp-sourcemaps": "^2.4.1"
+  },
+  "dependencies": {
+    "gulp-minify-css": "^1.2.4"
   }
 }

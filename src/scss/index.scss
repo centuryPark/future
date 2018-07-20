@@ -7,8 +7,11 @@ body {
 }
 
 h2, h3, h4, h5, h6, p {
-  // height: 64px;
   margin: 0;
+}
+
+#defaultCanvas0 {
+  width: 100% !important;
 }
 
 p {
@@ -82,23 +85,15 @@ a {
 .banner {
   margin: auto;
   position: relative;
-  height: 100vh;
+  font-size: 0;
+  padding-top: 51.37%;
+  overflow: hidden;
 
-  .banner-text {
+  img{
     position: absolute;
-    width: 50%;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-  }
-
-  .bg-cover {
-    position: absolute;
+    width: 100%;
+    top:0;
     left: 0;
-    right: 0;
-    height: 60px;
-    bottom: 0;
-    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1));
   }
 }
 
@@ -218,7 +213,7 @@ a {
           img {
             position: absolute;
             left: 0;
-            top: 0px;
+            top: 0;
             width: 100%;
           }
         }
@@ -701,7 +696,7 @@ a {
   width: calc(32.4rem + 184px);
 
   .line {
-    padding: 26px 0px 26px 26px;
+    padding: 26px 0 26px 26px;
     display: flex;
     list-style-type: none;
     margin: 0;
@@ -725,7 +720,7 @@ a {
       font-size: 1rem;
       line-height: 1em;
       letter-spacing: 2px;
-      font-weight: 500;
+      font-weight: bold;
     }
     .en {
       padding-top: 4px;
@@ -749,7 +744,7 @@ a {
       border-right: 8px solid transparent;
       border-bottom: 8px solid #964343;
       top: -8px;
-      left: 5.7rem;
+      left: 4.3rem;
     }
   }
 }

@@ -23,7 +23,7 @@ var intelligentList = {
             id: '',
             name: 'Dr. Bibhrajit Halder',
             enName: 'Dr. Bibhrajit Halder',
-            desc: ['自动驾驶软件公司创始人，范德堡大学机械工程系顾问，前苹果公司自动驾驶项目高级架构师'],
+            desc: ['SAFE AI 创始人兼CEO，范德堡大学机械工程系顾问、前苹果公司自动驾驶项目高级架构师'],
             enDesc: [''],
             picture: 'https://og9s6vxbs.qnssl.com/futrue/guests/Dr.BibhrajitHalder.jpg',
             Thumbnail: 'https://og9s6vxbs.qnssl.com/futrue/guests/Dr.BibhrajitHalder_s.jpg'
@@ -39,38 +39,32 @@ var intelligentList = {
         },
         {
             id: '',
-            name: '熊明磊',
-            enName: '',
-            desc: ['Robosea CEO'],
-            enDesc: [''],
-            picture: 'https://og9s6vxbs.qnssl.com/futrue/guests/xiongminglei.jpg',
-            Thumbnail: 'https://og9s6vxbs.qnssl.com/futrue/guests/xiongminglei_s.jpg'
-        },
-        {
-            id: '',
-            name: '简仁贤（拟邀）',
+            name: '简仁贤',
             enName: '',
             desc: ['竹间智能创始人及CEO'],
             enDesc: [''],
             picture: 'https://og9s6vxbs.qnssl.com/futrue/guests/jianrenxian.jpg',
             Thumbnail: 'https://og9s6vxbs.qnssl.com/futrue/guests/jianrenxian_s.jpg'
+        },
+        {
+            id: '',
+            name: '张经纬',
+            enName: '',
+            desc: ['上海博物馆馆员'],
+            enDesc: [''],
+            picture: 'https://og9s6vxbs.qnssl.com/futrue/guests/zhangjingwei.jpg',
+            Thumbnail: 'https://og9s6vxbs.qnssl.com/futrue/guests/zhangjingwei_s.jpg'
         }
     ],
     2: [
         {
             id: '',
-            name:
-                '张经纬',
-            enName:
-                '',
-            desc:
-                ['上海博物馆馆员'],
-            enDesc:
-                [''],
-            picture:
-                'https://og9s6vxbs.qnssl.com/futrue/guests/zhangjingwei.jpg',
-            Thumbnail:
-                'https://og9s6vxbs.qnssl.com/futrue/guests/zhangjingwei_s.jpg'
+            name: '范凌',
+            enName: '',
+            desc: ['特赞创始人及CEO'],
+            enDesc: [''],
+            picture: 'https://og9s6vxbs.qnssl.com/futrue/guests/fanling.jpg',
+            Thumbnail: ''
         }
     ]
 };
@@ -79,24 +73,6 @@ var lifeList = {
     index: 1,
     len: 2,
     1: [
-        {
-            id: '',
-            name: 'Dr. Susan Jenkins',
-            enName: '',
-            desc: ['加州伯克利大学创新基因研究院院长'],
-            enDesc: [''],
-            picture: 'https://og9s6vxbs.qnssl.com/futrue/guests/Dr.%20SusanJenkins.jpg',
-            Thumbnail: 'https://og9s6vxbs.qnssl.com/futrue/guests/Dr.%20SusanJenkins_s.jpg'
-        },
-        {
-            id: '',
-            name: '徐讯',
-            enName: '',
-            desc: ['华大集团CEO,深圳华大生命科学研究院院长，国家基因库执行主任'],
-            enDesc: [''],
-            picture: 'https://og9s6vxbs.qnssl.com/futrue/guests/xuxun.jpg',
-            Thumbnail: 'https://og9s6vxbs.qnssl.com/futrue/guests/xuxun_s.jpg'
-        },
         {
             id: '',
             name: '张嘉漪',
@@ -114,9 +90,7 @@ var lifeList = {
             enDesc: [''],
             picture: 'https://og9s6vxbs.qnssl.com/futrue/guests/jianghai.jpg',
             Thumbnail: 'https://og9s6vxbs.qnssl.com/futrue/guests/jianghai_s.jpg'
-        }
-    ],
-    2: [
+        },
         {
             id: '',
             name: '沈义栋',
@@ -134,6 +108,17 @@ var lifeList = {
             enDesc: [''],
             picture: 'https://og9s6vxbs.qnssl.com/futrue/guests/daijianwu.jpg',
             Thumbnail: 'https://og9s6vxbs.qnssl.com/futrue/guests/daijianwu_s.jpg'
+        }
+    ],
+    2: [
+        {
+            id: '',
+            name: '田兴',
+            enName: '',
+            desc: ['上海纽约大学神经与认知科学助理教授'],
+            enDesc: [''],
+            picture: 'https://og9s6vxbs.qnssl.com/futrue/guests/tianxing.jpg',
+            Thumbnail: ''
         }
     ]
 };
@@ -184,7 +169,7 @@ var cityList = {
             id: '',
             name: '虞晶怡',
             enName: '',
-            desc: ['上海科技大学信息科学与技术学院教授，美国特拉华大学计算机与信息科学系终身教授，叠境数字科技（上海）有限公司创始人'],
+            desc: ['上海科技大学信息科学与技术学院教授，叠境数字科技（上海）有限公司创始人'],
             enDesc: [''],
             picture: 'https://og9s6vxbs.qnssl.com/futrue/guests/yujingyi.jpg',
             Thumbnail: 'https://og9s6vxbs.qnssl.com/futrue/guests/yujingyi_s.jpg'
@@ -245,15 +230,6 @@ var exploreList = {
     2: [
         {
             id: '',
-            name: '叶聪',
-            enName: '',
-            desc: ['“蛟龙号”深海载人潜水器潜航员，“7000米载人潜水器”总布置主任设计师，中国唯一载人深潜器潜航员兼潜航员教练'],
-            enDesc: [''],
-            picture: 'https://og9s6vxbs.qnssl.com/futrue/guests/yecong.jpg',
-            Thumbnail: 'https://og9s6vxbs.qnssl.com/futrue/guests/yecong_s.jpg'
-        },
-        {
-            id: '',
             name: '夏伯渝',
             enName: '',
             desc: ['登山家'],
@@ -290,7 +266,7 @@ var recreationList = {
             id: '',
             name: '王希',
             enName: '',
-            desc: ['网易不鸣工作室创始人兼CEO，前微软Bungie游戏工作室技术负责人'],
+            desc: ['不鸣科技创始人兼CEO、前微软Bungie游戏工作室技术负责人'],
             enDesc: [''],
             picture: 'https://og9s6vxbs.qnssl.com/futrue/guests/wangxi.jpg',
             Thumbnail: 'https://og9s6vxbs.qnssl.com/futrue/guests/wangxi_s.jpg'
@@ -299,7 +275,7 @@ var recreationList = {
             id: '',
             name: '吴晓毛',
             enName: '',
-            desc: ['德国Girtworld创始人及CEO，前Crytek 法兰克福项目总监及技术总监'],
+            desc: ['德国GirtWorld创始人及CEO，前Crytek 法兰克福项目总监及技术总监'],
             enDesc: [''],
             picture: 'https://og9s6vxbs.qnssl.com/futrue/guests/wuxiaomao.jpg',
             Thumbnail: 'https://og9s6vxbs.qnssl.com/futrue/guests/wuxiaomao_s.jpg'
@@ -328,11 +304,21 @@ var recreationList = {
             id: '',
             name: '章扬',
             enName: '',
-            desc: ['GK电子竞技俱乐部创始人，人人体育创始人，柑客电竞创始人'],
+            desc: ['GK电子竞技俱乐部创始人，人人体育创始人'],
             enDesc: [''],
             picture: 'https://og9s6vxbs.qnssl.com/futrue/guests/zhangyang.jpg',
             Thumbnail: 'https://og9s6vxbs.qnssl.com/futrue/guests/zhangyang_s.jpg'
-        }]
+        },
+        {
+            id: '',
+            name: '陈柏言',
+            enName: '',
+            desc: ['柏言映画创始人及CEO、漫画家、设计师及动画制作人'],
+            enDesc: [''],
+            picture: 'https://og9s6vxbs.qnssl.com/futrue/guests/chenboyan.jpg',
+            Thumbnail: 'https://og9s6vxbs.qnssl.com/futrue/guests/zhangyang_s.jpg'
+        }
+    ]
 };
 // 未来空间
 var spaceList = {
@@ -361,7 +347,7 @@ var spaceList = {
             id: '',
             name: '青山周平',
             enName: '',
-            desc: ['BLUE建筑设计事务所创始合伙人、主持建筑师'],
+            desc: ['B.L.U.E建筑设计事务所创始合伙人、主持建筑师'],
             enDesc: [''],
             picture: 'https://og9s6vxbs.qnssl.com/futrue/guests/qingshanzhouping.jpg',
             Thumbnail: 'https://og9s6vxbs.qnssl.com/futrue/guests/qingshanzhouping_s.jpg'
@@ -382,7 +368,7 @@ var spaceList = {
             id: '',
             name: '张蓓',
             enName: '',
-            desc: ['“十里芳菲”“花间堂”创始人&首席设计师'],
+            desc: ['象外文化董事长、「十里芳菲」度假服务品牌创始人、「花间堂」酒店及度假村品牌创始人'],
             enDesc: [''],
             picture: 'https://og9s6vxbs.qnssl.com/futrue/guests/zhangbei.jpg',
             Thumbnail: 'https://og9s6vxbs.qnssl.com/futrue/guests/zhangbei_s.jpg'
@@ -419,6 +405,15 @@ var businessList = {
             enDesc: [''],
             picture: 'https://og9s6vxbs.qnssl.com/futrue/guests/zhanggong.jpg',
             Thumbnail: 'https://og9s6vxbs.qnssl.com/futrue/guests/zhanggong_s.jpg'
+        },
+        {
+            id: '',
+            name: '谷峰',
+            enName: '',
+            desc: ['爱驰汽车联合创始人兼首席执行官'],
+            enDesc: [''],
+            picture: 'https://og9s6vxbs.qnssl.com/futrue/guests/gufeng.jpg',
+            Thumbnail: ''
         }
     ]
 };
@@ -427,15 +422,6 @@ var humanList = {
     index: 1,
     len: 1,
     1: [
-        {
-            id: '',
-            name: 'Pernille Tranberg（拟邀）',
-            enName: '',
-            desc: ['Pernille Tranberg  DataEthicsConsulting.com创办人，数据道德领域咨询专家'],
-            enDesc: [''],
-            picture: 'https://og9s6vxbs.qnssl.com/futrue/guests/PernilleTranberg.jpg',
-            Thumbnail: 'https://og9s6vxbs.qnssl.com/futrue/guests/PernilleTranberg_s.jpg'
-        },
         {
             id: '',
             name: 'Amir Asor（拟邀）',
@@ -447,21 +433,21 @@ var humanList = {
         },
         {
             id: '',
-            name: '王志鸥',
-            enName: '',
-            desc: ['Blackbow黑弓创始人'],
-            enDesc: [''],
-            picture: 'https://og9s6vxbs.qnssl.com/futrue/guests/wangzhiou.jpg',
-            Thumbnail: 'https://og9s6vxbs.qnssl.com/futrue/guests/wangzhiou_s.jpg'
-        },
-        {
-            id: '',
             name: '张睿',
             enName: '',
             desc: ['连尚网络首席运营官'],
             enDesc: [''],
             picture: 'https://og9s6vxbs.qnssl.com/futrue/guests/zhangrui.jpg',
             Thumbnail: 'https://og9s6vxbs.qnssl.com/futrue/guests/zhangrui_s.jpg'
+        },
+        {
+            id: '',
+            name: ' 邝向荣',
+            enName: '',
+            desc: ['英国皇家建筑师学会会士、“中式软翼帆”发明者'],
+            enDesc: [''],
+            picture: 'https://og9s6vxbs.qnssl.com/futrue/guests/qixiangrong.jpg',
+            Thumbnail: ''
         }
     ]
 };

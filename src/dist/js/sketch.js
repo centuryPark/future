@@ -76,3 +76,28 @@ function Star(){
     }
 
 }
+
+
+var options ={
+    Background :[0,0,0],
+    Color1 : '#e37b1e',
+    Color2 : '#480638',
+    Points : 1000,
+    maxSize : 19,
+    minSize: 7.5,
+    Direction : 'Center',
+    Range : 1200,
+    Speed : 10,
+
+    Random: function () {
+        options.Color1 = [random(0,255),random(0,255),random(0,255)];
+        options.Color2 = [random(0,255),random(0,255),random(0,255)];
+        options.Speed = random(10,20);
+        options.Range = random(400);
+        options.Points = random(300,2000);
+        options.maxSize = random(1,20);
+        options.minSize = random(1,5);
+        options.Direction = random( ['Center', 'Left','Right','Up','Down'] );
+    },
+
+}
