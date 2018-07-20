@@ -374,7 +374,7 @@ var businessList = [
 var humanList = [
     {
         id: '',
-        name: 'Amir Asor（拟邀）',
+        name: 'Amir Asor',
         enName: '',
         desc: ['Young Engineers 创始人及CEO'],
         enDesc: [''],
