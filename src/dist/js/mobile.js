@@ -3,8 +3,8 @@ var MENUE_OPEN = false;
 var HEADER = $("#header");
 var BODY = $("body");
 var isInWechat = /micromessenger/i.test(navigator.userAgent);
-//var G_wechatUrl = 'https://io.zaojiu.com/api/wechat/signature/config';
-var G_wechatUrl = 'https://io.baidingchat.com/api/wechat/signature/config';
+var G_wechatUrl = 'https://io.zaojiu.com/api/wechat/signature/config';
+//var G_wechatUrl = 'https://io.baidingchat.com/api/wechat/signature/config';
 
 // 未来智能
 var intelligentList = [
@@ -479,10 +479,9 @@ var reviewGuests = {
 };
 
 $(document).ready(function () {
-   /* if (isInWechat) {
+    if (isInWechat) {
         shareInit({});
-    }*/
-    shareInit({});
+    }
     insertGuest('#intelligent_content', intelligentList);
     insertGuest('#life_content', lifeList);
     insertGuest('#city_content', cityList);
@@ -578,7 +577,7 @@ function shareInit(itemData) {
         itemData.ShareImg = 'https://og9s6vxbs.qnssl.com/zaojiu-logo.jpg';
     }
     if (!itemData.ShareUrl) {
-        itemData.ShareUrl = window.location.href;
+        itemData.ShareUrl = location.href;
     }
 
     return $.ajax({
@@ -592,7 +591,7 @@ function shareInit(itemData) {
             if (result) {
                 let configInfo = result;
                 wx.config({
-                    debug: true, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+                    debug: false, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
                     appId: configInfo.appId, // 必填，公众号的唯一标识
                     timestamp: configInfo.timestamp, // 必填，生成签名的时间戳
                     nonceStr: configInfo.nonceStr, // 必填，a生成签名的随机串
@@ -606,50 +605,50 @@ function shareInit(itemData) {
                         'onMenuShareAppMessage'] // 必填，需要使用的JS接口列表，所有JS接口列表见附录2
                 });
 
-                wx.onMenuShareAppMessage({
-                    title: itemData.ShareTitle,
-                    desc: itemData.ShareIntro,
-                    link: itemData.ShareUrl,
-                    imgUrl: itemData.ShareImg,
-                    trigger: function (res) {
-                        //alert('用户点击发送给朋友');
-                    },
-                    success: function (res) {
-                        //alert('已分享');
-                    },
-                    cancel: function (res) {
-                        // alert('已取消');
-                    },
-                    fail: function (res) {
-                        // alert(JSON.stringify(res));
-                    }
-                });
-                // config信息验证后会执行ready方法，所有接口调用都必须在config接口获得结果之后，config是一个客户端的异步操作，所以如果需要在页面加载时就调用相关接口，则须把相关接口放在ready函数中调用来确保正确执行。对于用户触发时才调用的接口，则可以直接调用，不需要放在ready函数中。
-                wx.onMenuShareQQ({
-                    title: itemData.ShareTitle,
-                    desc: itemData.ShareIntro,
-                    link: itemData.ShareUrl,
-                    imgUrl: itemData.ShareImg,
-                    success: function () {},
-                    cancel: function () {}
-                });
-                wx.onMenuShareWeibo({
-                    title: itemData.ShareTitle,
-                    desc: itemData.ShareIntro,
-                    link: itemData.ShareUrl,
-                    imgUrl: itemData.ShareImg,
-                    success: function () {},
-                    cancel: function () {}
-                });
-                wx.onMenuShareTimeline({
-                    title: itemData.ShareTitle,
-                    link: itemData.ShareUrl,
-                    imgUrl: itemData.ShareImg,
-                    success: function () {},
-                    cancel: function () {}
-                });
-
                 wx.ready(function () {
+                    console.log('wx success');
+                    wx.onMenuShareAppMessage({
+                        title: '2018造就FUTURE年度大会',
+                        desc: '蔡康永、马岩松...邀你踏入奇思妙想新纪元！',
+                        link: itemData.ShareUrl,
+                        imgUrl: 'https://og9s6vxbs.qnssl.com/zaojiu-logo.jpg',
+                        trigger: function (res) {
+                            //alert('用户点击发送给朋友');
+                        },
+                        success: function (res) {
+                            //alert('已分享');
+                        },
+                        cancel: function (res) {
+                            // alert('已取消');
+                        },
+                        fail: function (res) {
+                            // alert(JSON.stringify(res));
+                        }
+                    });
+                    // config信息验证后会执行ready方法，所有接口调用都必须在config接口获得结果之后，config是一个客户端的异步操作，所以如果需要在页面加载时就调用相关接口，则须把相关接口放在ready函数中调用来确保正确执行。对于用户触发时才调用的接口，则可以直接调用，不需要放在ready函数中。
+                    wx.onMenuShareQQ({
+                        title: itemData.ShareTitle,
+                        desc: itemData.ShareIntro,
+                        link: itemData.ShareUrl,
+                        imgUrl: itemData.ShareImg,
+                        success: function () {},
+                        cancel: function () {}
+                    });
+                    wx.onMenuShareWeibo({
+                        title: itemData.ShareTitle,
+                        desc: itemData.ShareIntro,
+                        link: itemData.ShareUrl,
+                        imgUrl: itemData.ShareImg,
+                        success: function () {},
+                        cancel: function () {}
+                    });
+                    wx.onMenuShareTimeline({
+                        title: itemData.ShareTitle,
+                        link: itemData.ShareUrl,
+                        imgUrl: itemData.ShareImg,
+                        success: function () {},
+                        cancel: function () {}
+                    });
                 });
                 wx.error(function (err) {
                     console.log('wx err:', err);
